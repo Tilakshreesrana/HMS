@@ -65,6 +65,22 @@
     <Compile Include="Migrations\202008192048514_identityframeworkUser.Designer.cs">
       <DependentUpon>202008192048514_identityframeworkUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202008230852087_entityChanged.cs" />
+    <Compile Include="Migrations\202008230852087_entityChanged.Designer.cs">
+      <DependentUpon>202008230852087_entityChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008300843146_addedpropertiesHMSUser.cs" />
+    <Compile Include="Migrations\202008300843146_addedpropertiesHMSUser.Designer.cs">
+      <DependentUpon>202008300843146_addedpropertiesHMSUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009041302556_addedpictureentities.cs" />
+    <Compile Include="Migrations\202009041302556_addedpictureentities.Designer.cs">
+      <DependentUpon>202009041302556_addedpictureentities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009101738450_accomodationPackageModified.cs" />
+    <Compile Include="Migrations\202009101738450_accomodationPackageModified.Designer.cs">
+      <DependentUpon>202009101738450_accomodationPackageModified.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -84,6 +100,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202008192048514_identityframeworkUser.resx">
       <DependentUpon>202008192048514_identityframeworkUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008230852087_entityChanged.resx">
+      <DependentUpon>202008230852087_entityChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008300843146_addedpropertiesHMSUser.resx">
+      <DependentUpon>202008300843146_addedpropertiesHMSUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009041302556_addedpictureentities.resx">
+      <DependentUpon>202009041302556_addedpictureentities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009101738450_accomodationPackageModified.resx">
+      <DependentUpon>202009101738450_accomodationPackageModified.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -55,10 +55,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Accomodation.cs" />
+    <Compile Include="Models\AccomodationImage.cs" />
     <Compile Include="Models\AccomodationPackage.cs" />
+    <Compile Include="Models\AccomodationPackageImage.cs" />
     <Compile Include="Models\AccomodationType.cs" />
     <Compile Include="Models\Booking.cs" />
     <Compile Include="Models\HMSUser.cs" />
+    <Compile Include="Models\Image.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

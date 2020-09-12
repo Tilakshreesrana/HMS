@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HMS.Data.Repository.Repositories;
+using HMS.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,23 +10,20 @@ namespace HMS.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IRepositoryWrapper _repoWrapper;
+        public HomeController(IRepositoryWrapper repoWrapper)
+        {
+            _repoWrapper = repoWrapper;
+
+        }
         public ActionResult Index()
         {
-            return View();
+            HomeViewModel model = new HomeViewModel();
+            model.accomodationTypes = _repoWrapper.AccomodationTypes.GetAll().ToList();
+            model.accomodationPackages = _repoWrapper.AccomodationPackages.GetAll().ToList();
+
+            return View(model);
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }

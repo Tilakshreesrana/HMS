@@ -45,16 +45,43 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -72,35 +99,20 @@
     </Reference>
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
-    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Abstractions, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.11.1\lib\net46\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.11.1\lib\net46\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mvc5, Version=1.4.0.0, Culture=neutral, PublicKeyToken=43da31bc42a85347, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Mvc5.1.4.0\lib\net45\Unity.Mvc5.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -112,12 +124,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
@@ -167,11 +173,32 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="Areas\Dashboard\Controllers\AccomodationPackagesController.cs" />
+    <Compile Include="Areas\Dashboard\Controllers\AccomodationsController.cs" />
+    <Compile Include="Areas\Dashboard\Controllers\AccomodationTypesController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Areas\Dashboard\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\Dashboard\Controllers\RolesController.cs" />
+    <Compile Include="Areas\Dashboard\Controllers\UsersController.cs" />
     <Compile Include="Areas\Dashboard\DashboardAreaRegistration.cs" />
+    <Compile Include="Areas\Dashboard\ViewModels\AccomodationPackageActionViewModel.cs" />
+    <Compile Include="Areas\Dashboard\ViewModels\AccomodationPackagesViewModel.cs" />
+    <Compile Include="Areas\Dashboard\ViewModels\AccomodationsActionViewModel.cs" />
+    <Compile Include="Areas\Dashboard\ViewModels\AccomodationsViewModel.cs" />
+    <Compile Include="Areas\Dashboard\ViewModels\AccomodationTypeActionViewModel.cs" />
+    <Compile Include="Areas\Dashboard\ViewModels\AccomodationTypesViewModel.cs" />
+    <Compile Include="Areas\Dashboard\ViewModels\RolesActionViewModel.cs" />
+    <Compile Include="Areas\Dashboard\ViewModels\RolesViewModel.cs" />
+    <Compile Include="Areas\Dashboard\ViewModels\UserRolesViewModel.cs" />
+    <Compile Include="Areas\Dashboard\ViewModels\UsersActionViewModel.cs" />
+    <Compile Include="Areas\Dashboard\ViewModels\UsersViewModel.cs" />
+    <Compile Include="Constants\HMSConstants.cs" />
+    <Compile Include="Controllers\AccomodationsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Areas\Dashboard\Controllers\UploadController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -180,6 +207,11 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\AccomodationPackageDetailsViewModel.cs" />
+    <Compile Include="ViewModels\AccomodationsFEViewModel.cs" />
+    <Compile Include="ViewModels\CheckAccomodationAvailablityViewModel.cs" />
+    <Compile Include="ViewModels\HomeViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Dashboard\Content\css\font-awesome-all.css" />
@@ -201,16 +233,24 @@
     <Content Include="Areas\Dashboard\Content\webfonts\fa-brands-400.svg" />
     <Content Include="Areas\Dashboard\Content\webfonts\fa-regular-400.svg" />
     <Content Include="Areas\Dashboard\Content\webfonts\fa-solid-900.svg" />
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\animate.css" />
+    <Content Include="Content\bootstrap-datepicker.css" />
     <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\flexslider.css" />
+    <Content Include="Content\icomoon.css" />
+    <Content Include="Content\magnific-popup.css" />
+    <Content Include="Content\owl.carousel.min.css" />
+    <Content Include="Content\owl.theme.default.min.css" />
+    <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\flaticon\backup.txt" />
+    <Content Include="fonts\flaticon\font\flaticon.css" />
+    <Content Include="fonts\flaticon\font\flaticon.html" />
+    <Content Include="fonts\flaticon\font\Flaticon.svg" />
+    <Content Include="fonts\icomoon\icomoon.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Dashboard\Views\web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -241,18 +281,76 @@
     <Content Include="Areas\Dashboard\Content\webfonts\fa-solid-900.ttf" />
     <Content Include="Areas\Dashboard\Content\webfonts\fa-solid-900.woff" />
     <Content Include="Areas\Dashboard\Content\webfonts\fa-solid-900.woff2" />
-    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.3.1.js" />
-    <Content Include="Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Areas\Dashboard\Views\AccomodationTypes\Index.cshtml" />
+    <Content Include="Areas\Dashboard\Views\AccomodationTypes\_listingAccomodationTypes.cshtml" />
+    <Content Include="Areas\Dashboard\Views\AccomodationTypes\_action.cshtml" />
+    <Content Include="Areas\Dashboard\Views\AccomodationTypes\_Delete.cshtml" />
+    <Content Include="Areas\Dashboard\Views\AccomodationPackages\Index.cshtml" />
+    <Content Include="Areas\Dashboard\Views\AccomodationPackages\_listingAccomodationPackages.cshtml" />
+    <Content Include="Areas\Dashboard\Views\AccomodationPackages\_action.cshtml" />
+    <Content Include="Areas\Dashboard\Views\AccomodationPackages\_Delete.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Accomodations\Index.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Accomodations\_listingAccomodations.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Accomodations\_action.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Accomodations\_Delete.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Users\_action.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Users\_Delete.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Users\_listingUsers.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Users\Index.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Roles\_action.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Roles\_Delete.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Roles\_listingRoles.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Roles\Index.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Users\_userRoles.cshtml" />
+    <Content Include="images\amenities-1.jpg" />
+    <Content Include="images\amenities-2.jpg" />
+    <Content Include="images\amenities-3.jpg" />
+    <Content Include="images\blog-1.jpg" />
+    <Content Include="images\blog-2.jpg" />
+    <Content Include="images\blog-3.jpg" />
+    <Content Include="images\cover_img_1.jpg" />
+    <Content Include="images\img_bg_1.jpg" />
+    <Content Include="images\img_bg_2.jpg" />
+    <Content Include="images\img_bg_3.jpg" />
+    <Content Include="images\img_bg_4.jpg" />
+    <Content Include="images\img_bg_5.jpg" />
+    <Content Include="images\loader.gif" />
+    <Content Include="images\loc.png" />
+    <Content Include="images\menu-1.jpg" />
+    <Content Include="images\menu-2.jpg" />
+    <Content Include="images\menu-3.jpg" />
+    <Content Include="images\menu-4.jpg" />
+    <Content Include="images\menu-5.jpg" />
+    <Content Include="images\menu-6.jpg" />
+    <Content Include="images\menu-7.jpg" />
+    <Content Include="images\menu-8.jpg" />
+    <Content Include="images\menu-9.jpg" />
+    <Content Include="images\person1.jpg" />
+    <Content Include="images\person2.jpg" />
+    <Content Include="images\person3.jpg" />
+    <Content Include="images\room-1.jpg" />
+    <Content Include="images\room-2.jpg" />
+    <Content Include="images\room-3.jpg" />
+    <Content Include="images\room-4.jpg" />
+    <Content Include="images\room-5.jpg" />
+    <Content Include="images\room-6.jpg" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\google_map.js" />
+    <Content Include="Scripts\jquery.easing.1.3.js" />
+    <Content Include="Scripts\jquery.flexslider-min.js" />
+    <Content Include="Scripts\jquery.magnific-popup.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.waypoints.min.js" />
+    <Content Include="Scripts\magnific-popup-options.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\modernizr-2.6.2.min.js" />
+    <Content Include="Scripts\owl.carousel.min.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\site.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -263,8 +361,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -290,21 +386,116 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Dashboard\Models\" />
+    <Folder Include="Areas\Dashboard\Views\Base\" />
+    <Folder Include="images\Upload\" />
+    <Folder Include="Views\Upload\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\.DS_Store" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\sass\.DS_Store" />
+    <Content Include="Content\sass\bootstrap.scss" />
+    <Content Include="Content\sass\bootstrap\.DS_Store" />
+    <Content Include="Content\sass\bootstrap\mixins\_alerts.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_center-block.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_forms.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_grid.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_image.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_labels.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_opacity.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_panels.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_resize.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_size.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="Content\sass\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="Content\sass\bootstrap\_alerts.scss" />
+    <Content Include="Content\sass\bootstrap\_badges.scss" />
+    <Content Include="Content\sass\bootstrap\_breadcrumbs.scss" />
+    <Content Include="Content\sass\bootstrap\_button-groups.scss" />
+    <Content Include="Content\sass\bootstrap\_buttons.scss" />
+    <Content Include="Content\sass\bootstrap\_carousel.scss" />
+    <Content Include="Content\sass\bootstrap\_close.scss" />
+    <Content Include="Content\sass\bootstrap\_code.scss" />
+    <Content Include="Content\sass\bootstrap\_component-animations.scss" />
+    <Content Include="Content\sass\bootstrap\_dropdowns.scss" />
+    <Content Include="Content\sass\bootstrap\_forms.scss" />
+    <Content Include="Content\sass\bootstrap\_glyphicons.scss" />
+    <Content Include="Content\sass\bootstrap\_grid.scss" />
+    <Content Include="Content\sass\bootstrap\_input-groups.scss" />
+    <Content Include="Content\sass\bootstrap\_jumbotron.scss" />
+    <Content Include="Content\sass\bootstrap\_labels.scss" />
+    <Content Include="Content\sass\bootstrap\_list-group.scss" />
+    <Content Include="Content\sass\bootstrap\_media.scss" />
+    <Content Include="Content\sass\bootstrap\_mixins.scss" />
+    <Content Include="Content\sass\bootstrap\_modals.scss" />
+    <Content Include="Content\sass\bootstrap\_navbar.scss" />
+    <Content Include="Content\sass\bootstrap\_navs.scss" />
+    <Content Include="Content\sass\bootstrap\_normalize.scss" />
+    <Content Include="Content\sass\bootstrap\_pager.scss" />
+    <Content Include="Content\sass\bootstrap\_pagination.scss" />
+    <Content Include="Content\sass\bootstrap\_panels.scss" />
+    <Content Include="Content\sass\bootstrap\_popovers.scss" />
+    <Content Include="Content\sass\bootstrap\_print.scss" />
+    <Content Include="Content\sass\bootstrap\_progress-bars.scss" />
+    <Content Include="Content\sass\bootstrap\_responsive-embed.scss" />
+    <Content Include="Content\sass\bootstrap\_responsive-utilities.scss" />
+    <Content Include="Content\sass\bootstrap\_scaffolding.scss" />
+    <Content Include="Content\sass\bootstrap\_tables.scss" />
+    <Content Include="Content\sass\bootstrap\_theme.scss" />
+    <Content Include="Content\sass\bootstrap\_thumbnails.scss" />
+    <Content Include="Content\sass\bootstrap\_tooltip.scss" />
+    <Content Include="Content\sass\bootstrap\_type.scss" />
+    <Content Include="Content\sass\bootstrap\_utilities.scss" />
+    <Content Include="Content\sass\bootstrap\_variables.scss" />
+    <Content Include="Content\sass\bootstrap\_wells.scss" />
+    <Content Include="Content\sass\style.scss" />
+    <Content Include="Content\sass\_bootstrap-compass.scss" />
+    <Content Include="Content\sass\_bootstrap-mincer.scss" />
+    <Content Include="Content\sass\_bootstrap-sprockets.scss" />
+    <Content Include="Content\style.css.map" />
+    <Content Include="fonts\bootstrap\.DS_Store" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\flaticon\.DS_Store" />
+    <Content Include="fonts\flaticon\font\Flaticon.eot" />
+    <Content Include="fonts\flaticon\font\Flaticon.ttf" />
+    <Content Include="fonts\flaticon\font\Flaticon.woff" />
+    <Content Include="fonts\flaticon\font\_flaticon.scss" />
+    <Content Include="fonts\flaticon\license\license.pdf" />
+    <Content Include="fonts\icomoon\.DS_Store" />
+    <Content Include="fonts\icomoon\icomoon.eot" />
+    <Content Include="fonts\icomoon\icomoon.ttf" />
+    <Content Include="fonts\icomoon\icomoon.woff" />
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Scripts\.DS_Store" />
+    <Content Include="Views\Accomodations\Index.cshtml" />
+    <Content Include="Views\Accomodations\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HMS.Data.Repository\HMS.Data.Repository.csproj">
+      <Project>{39A69B83-1580-4752-BFF0-7F1C4644F54E}</Project>
+      <Name>HMS.Data.Repository</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HMS.Data\HMS.Data.csproj">
       <Project>{929a384d-0494-4941-9981-9c0c7623b9a9}</Project>
       <Name>HMS.Data</Name>

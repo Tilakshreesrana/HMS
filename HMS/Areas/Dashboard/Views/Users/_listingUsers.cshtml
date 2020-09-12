@@ -1,0 +1,76 @@
+﻿@model HMS.Areas.Dashboard.ViewModels.UsersViewModel
+@if (Model != null && Model.Users != null && Model.Users.Count() > 0)
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Full Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">User Name</th>
+                <th scope="col">Role</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.Users)
+            {
+            <tr>
+                <td>@user.FullName</td>
+                <td>@user.Email</td>
+                <td>@user.UserName</td>
+                <td>@user.Roles.Count()</td>
+
+                <td>
+                    <button type="button" data-href="@Url.Action("Action", "Users", new { ID = user.Id })" class="action-btn btn btn-primary" data-toggle="modal" data-target="#actionModal"><i class="fas fa-edit mr-1"></i>Edit</button>
+                    <button type="button" data-href="@Url.Action("Delete", "Users", new { ID = user.Id })" class="action-btn btn btn-danger" data-toggle="modal" data-target="#actionModal"><i class="fas fa-trash-alt mr-1"></i>Delete</button>
+                    <button type="button" data-href="@Url.Action("UserRoles", "Users", new { ID = user.Id })" class="action-btn btn btn-info" data-toggle="modal" data-target="#actionModal"><i class="fas fa-user-shield mr-1"></i>Roles</button>
+                </td>
+            </tr>
+
+            }
+
+
+        </tbody>
+    </table>
+    if (Model.pager.EndPage > 1)
+    {
+        <nav>
+            <ul class="pagination">
+                @if (Model.pager.CurrentPage > 1)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Index","Users",new { searchTerm = Model.searchTerm, RoleID = Model.RoleID } )">First<i class="fas fa-angle-double-left ml-1"></i></a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Index","Users",new { pageNo = Model.pager.CurrentPage - 1,searchTerm=Model.searchTerm,RoleID = Model.RoleID})">Previous<i class="fas fa-angle-left ml-1"></i></a>
+                    </li>
+                }
+
+                @for (var page = Model.pager.StartPage; page <= Model.pager.EndPage; page++)
+                {
+                    <li class="page-item @(page == Model.pager.CurrentPage ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("Index","Users",new { pageNo = page,searchTerm=Model.searchTerm,RoleID = Model.RoleID})">@page</a>
+                    </li>
+                }
+
+                @if (Model.pager.CurrentPage < Model.pager.TotalPages)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Index","Users",new { pageNo = Model.pager.CurrentPage + 1,searchTerm=Model.searchTerm,RoleID = Model.RoleID})">Next<i class="fas fa-angle-right ml-1"></i></a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Index","Users",new { pageNo = Model.pager.TotalPages,searchTerm=Model.searchTerm,RoleID = Model.RoleID})">Last<i class="fas fa-angle-double-right ml-1"></i></a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    }
+
+}
+else
+{
+    <div class="alert alert-warning" role="alert">
+        Sorry! no records exists!!
+    </div>
+}
+
